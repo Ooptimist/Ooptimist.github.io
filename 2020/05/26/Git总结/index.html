@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Git总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="以下是在学习完learngitbranching中的内容后进行的一些总结 本地git commitgit branch&amp;emsp;&amp;emsp;（git branch newBranch）可以创建分支名为newBranch的分支  git checkout&amp;emsp;&amp;emsp;（git checkout name）切换到另一的分支上&amp;emsp;&amp;emsp;（git checkout -b name">
+  <meta name="description" content="以下是在学习完learngitbranching中的内容后进行的一些总结 本地git commitgit branch&amp;emsp;&amp;emsp;（git branch newBranch）可以创建分支名为newBranch的分支 git checkout&amp;emsp;&amp;emsp;（git checkout name）切换到另一的分支上&amp;emsp;&amp;emsp;（git checkout -b name">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git总结">
 <meta property="og:url" content="http://yoursite.com/2020/05/26/Git%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="以下是在学习完learngitbranching中的内容后进行的一些总结 本地git commitgit branch&amp;emsp;&amp;emsp;（git branch newBranch）可以创建分支名为newBranch的分支  git checkout&amp;emsp;&amp;emsp;（git checkout name）切换到另一的分支上&amp;emsp;&amp;emsp;（git checkout -b name">
+<meta property="og:description" content="以下是在学习完learngitbranching中的内容后进行的一些总结 本地git commitgit branch&amp;emsp;&amp;emsp;（git branch newBranch）可以创建分支名为newBranch的分支 git checkout&amp;emsp;&amp;emsp;（git checkout name）切换到另一的分支上&amp;emsp;&amp;emsp;（git checkout -b name">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200525201432781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200525200026781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200526100041340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-05-26T11:12:37.972Z">
-<meta property="article:modified_time" content="2020-05-26T11:44:55.673Z">
+<meta property="article:modified_time" content="2020-05-26T11:47:23.270Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200525201432781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70">
@@ -180,11 +180,8 @@
       
         <p>以下是在学习完<a href="https://learngitbranching.js.org/?locale=zh_CN" target="_blank" rel="noopener">learngitbranching</a>中的内容后进行的一些总结</p>
 <h2 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h2><h3 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h3><h3 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h3><p>&emsp;&emsp;（git branch newBranch）可以创建分支名为newBranch的分支</p>
-<hr>
 <h3 id="git-checkout"><a href="#git-checkout" class="headerlink" title="git checkout"></a>git checkout</h3><p>&emsp;&emsp;（git checkout name）切换到另一的分支上<br>&emsp;&emsp;（git checkout -b name [指向位置]）生成一个新的分支并将其检出，指向位置可以是一个提交记录或一个分支名</p>
-<hr>
 <h3 id="git-merge"><a href="#git-merge" class="headerlink" title="git merge"></a>git merge</h3><p>&emsp;&emsp;（git merge branchName）将当前分支与branchName分支合并</p>
-<hr>
 <h3 id="git-rebase"><a href="#git-rebase" class="headerlink" title="git rebase"></a>git rebase</h3><p>&emsp;&emsp;（git rebase branchName）与merge作用一致，但可以创建更加线性的提交历史<br>&emsp;&emsp;（git rebase branch1 branch2）将branch2合并到branch1上<br>&emsp;&emsp;当master(任一分支节点)为bugFix的父提交时（git rebase bugFix master）相当于将两个分支合并，并指向master</p>
 <blockquote>
 <h4 id="git-rebase的参数"><a href="#git-rebase的参数" class="headerlink" title="git rebase的参数"></a>git rebase的参数</h4><p> &emsp;&emsp;（git rebase -i HEAD~4）：将HEAD的前四个提交进行调整 Git 会打开一个 UI 界面并列出将要被复制到目标分支的备选提交记录，还会显示每个提交记录的哈希值和提交说明。</p>
@@ -195,11 +192,8 @@
 <li>删除你不想要的提交</li>
 <li>合并提交。</li>
 </ol>
-<hr>
 <h3 id="git-cherry-pick"><a href="#git-cherry-pick" class="headerlink" title="git cherry-pick"></a>git cherry-pick</h3><p>&emsp;&emsp; （git cherry-pick &lt;提交号&gt;…）<br>&emsp;&emsp;将一些提交复制到当前所在的位置（HEAD）下面</p>
-<hr>
 <h3 id="git-tag"><a href="#git-tag" class="headerlink" title="git tag"></a>git tag</h3><p>&emsp;&emsp;（git tag v1 c1）：v1为标签命名，c1为提交记录（不指定的话默认HEAD指向的记录）</p>
-<hr>
 <h3 id="git-describe"><a href="#git-describe" class="headerlink" title="git describe"></a>git describe</h3><p>&emsp;&emsp;用来描述离你最近的锚点（标签）</p>
 <p>&emsp;&emsp;<strong>（git describe &lt;ref&gt;）</strong> &lt;ref&gt; 可以是任何能被 Git 识别成提交记录的引用，如果你没有指定的话，Git 会以你目前所检出的位置（HEAD）。</p>
 <ul>
@@ -211,12 +205,9 @@
 </ul>
 <p>&emsp;&emsp;输出的结果：&lt;tag&gt;_&lt;numCommits&gt;_g&lt;hash&gt;</p>
 <p>当 ref 提交记录上有某个标签时，则只输出标签名称</p>
-<hr>
 <h3 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h3><p>&emsp;&emsp;撤回后所做的更改还在，只是处于未加入暂存区状态<br>&emsp;&emsp;PS：对多人一起使用的远程分支是无效的</p>
 <h3 id="git-revert"><a href="#git-revert" class="headerlink" title="git revert"></a>git revert</h3><p>&emsp;&emsp;撤销更改并分享给别人(与上面命令区别)<br><img src="https://img-blog.csdnimg.cn/20200525201432781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
 <h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="git-clone"><a href="#git-clone" class="headerlink" title="git clone"></a>git clone</h3><p>&emsp;&emsp;本地会生成一个origin/master的远程分支(origin为仓库名)<br>&emsp;&emsp;o/master 只有在远程仓库中相应的分支更新了以后才会更新<br>&emsp;&emsp;远程分支有一个特别的属性，在你检出时自动进入分离 HEAD 状态。</p>
-<hr>
 <h3 id="git-fetch"><a href="#git-fetch" class="headerlink" title="git fetch"></a>git fetch</h3><p>&emsp;&emsp;从远程仓库获取数据</p>
 <p>&emsp;&emsp; git fetch 完成了仅有的但是很重要的两步:</p>
 <ul>
@@ -233,7 +224,6 @@
 <blockquote>
 <h4 id="Git-fetch-的参数"><a href="#Git-fetch-的参数" class="headerlink" title="Git fetch 的参数"></a>Git fetch 的参数</h4><p>git fetch &lt;remote&gt; &lt;place&gt;<br>（git fetch origin foo）Git 会到远程仓库的 foo 分支上，然后获取所有本地不存在的提交，放到本地的 o/foo 上。<br>git fetch origin &lt;source&gt;:&lt;destination&gt;    如果destination分支在本地没有，会自动创建</p>
 </blockquote>
-<hr>
 <h3 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h3><p>&emsp;&emsp;先抓取更新再合并到本地分支</p>
 <ul>
 <li>git pull 是 fetch 和 merge 的简写</li>
@@ -242,7 +232,6 @@
 <blockquote>
 <h4 id="git-pull-参数"><a href="#git-pull-参数" class="headerlink" title="git pull 参数"></a>git pull 参数</h4><p> &emsp;&emsp;git <strong>pull</strong> origin foo 相当于：git <strong>fetch</strong> origin foo; git <strong>merge</strong> o/foo</p>
 </blockquote>
-<hr>
 <h3 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h3><p>&emsp;&emsp;将你的变更上传到指定的远程仓库，并在远程仓库上合并你的新提交记录。本地的远程分支 (origin/master) 也同样被更新了。</p>
 <blockquote>
 <p>当 git push 时，如果远程仓库中的分支已经被别人更新，Git 是不会允许你 push<br>变更的。实际上它会强制你先合并远程最新的代码，然后才能分享你的工作。</p>
@@ -252,18 +241,14 @@
 <h4 id="git-push-的参数"><a href="#git-push-的参数" class="headerlink" title="git push 的参数"></a>git push 的参数</h4><p>&emsp;&emsp;git push &lt;remote&gt; &lt;place&gt;<br>&emsp;&emsp;（git push origin master）切到本地仓库中的“master”分支，获取所有的提交，再到远程仓库“origin”中找到“master”分支，将远程仓库中没有的提交记录都添加上去。</p>
 </blockquote>
 <p>&emsp;&emsp;同时指定源和目的地：git push origin &lt;source&gt;:&lt;destination&gt;<br>可以指定source的位置，更新到远程仓库的destination分支上（如果远程仓库中没有destination分支，会自动创建）</p>
-<hr>
 <h3 id="HEAD"><a href="#HEAD" class="headerlink" title="HEAD"></a>HEAD</h3><p>HEAD 是一个对当前检出记录的符号引用，总是指向当前分支上最近一次提交记录<br><img src="https://img-blog.csdnimg.cn/20200525200026781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<hr>
 <h3 id="git中的相对引用"><a href="#git中的相对引用" class="headerlink" title="git中的相对引用"></a>git中的相对引用</h3><ul>
 <li><strong>使用 ^ 向上移动 1 个提交记录</strong><br>（^数字）如果当前分支有多个父提交，可以用来指定移动到哪一个<strong>父</strong>提交</li>
 <li><strong>使用 ~<num> 向上移动多个提交记录，如 ~3</strong><br>（git checkout master^） 让HEAD指向master提交的父提交<br>（git branch -f master HEAD~3）强制将 master 指向 HEAD 的第 3 <strong>级</strong>父提交</li>
 <li>可以使用缩写形式<br>（git checkout HEAD~^2~2）<br><img src="https://img-blog.csdnimg.cn/20200526100041340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvcmNlcmVyXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
 </ul>
-<hr>
 <h3 id="远程服务器拒绝-Remote-Rejected"><a href="#远程服务器拒绝-Remote-Rejected" class="headerlink" title="远程服务器拒绝!(Remote Rejected)"></a>远程服务器拒绝!(Remote Rejected)</h3><p>&emsp;&emsp;当master被锁定，需要一些Pull Request流程来合并修改。如果你直接提交(commit)到本地master, 然后试图推送(push)修改，会被远程服务器拒绝。</p>
 <p>&emsp;&emsp;解决方法：新建一个分支feature, 推送到远程服务器.(不要对master进行推送) 然后reset你的master分支和远程服务器保持一致, 否则下次你pull并且他人的提交和你冲突的时候就会有问题。</p>
-<hr>
 <h3 id="远程跟踪分支"><a href="#远程跟踪分支" class="headerlink" title="远程跟踪分支"></a>远程跟踪分支</h3><ul>
 <li>pull 时, 提交记录会被先下载到 o/master 上，之后再合并到本地的 master 分支。隐含的合并目标由这个关联确定的。</li>
 <li>push 时, 我们把工作从 master 推到远程仓库中的 master 分支(同时会更新远程分支 o/master) 。</li>
@@ -275,7 +260,6 @@
 <li>通过远程分支检出一个新的分支，执行: git checkout -b totallyNotMaster o/master<br>可将一个并不叫 master 的分支上的工作推送到了远程仓库中的 master 分支</li>
 <li>设置远程追踪分支的方法就是使用：git branch -u 命令，执行：<br>git branch -u o/master foo 这个命令更明确</li>
 </ol>
-<hr>
 <h3 id="关于参数-lt-source-gt"><a href="#关于参数-lt-source-gt" class="headerlink" title="关于参数&lt;source&gt;"></a>关于参数&lt;source&gt;</h3><p>&emsp;&emsp;在 git push 或 git fetch 不指定任何 source时：<br>&emsp;&emsp;git push origin :side通过给 push 传空值 source，成功删除了远程仓库中的 foo 分支<br>&emsp;&emsp;git fetch origin :bugFix 如果 fetch 空 到本地，会在本地创建一个新分支。</p>
 
       
